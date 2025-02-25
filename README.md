@@ -22,46 +22,50 @@ Sekarang, mari kita mulai dengan langkah pertama!
 
 ## Langkah Pertama (Membuat Container)
 
-![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/gambar-1.png?raw=true)
+<img src="Membuat_container.png" lebar="500" />
 
 1.Pilih Node: Pada panel sebelah kiri, di bawah "Datacenter", pilih node Proxmox tempat Anda ingin membuat CT. Node ini biasanya memiliki nama seperti "pg-proxmoxlab" seperti pada gambar.
 2.Klik "Create CT": Setelah memilih node, cari dan klik tombol "Create CT". Tombol ini biasanya terletak di bagian atas antarmuka, di sebelah tombol "Create VM".
 3.Wizard Pembuatan CT: Setelah mengklik "Create CT", sebuah wizard akan muncul untuk memandu Anda melalui proses pembuatan CT. Wizard ini biasanya terdiri dari beberapa tab atau bagian:
 - General: Di sini, Anda akan memasukkan informasi dasar tentang CT Anda, seperti:
-    - ![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/gambar-2.png?raw=true)
+    - <img src="membuat-pass-container.png" lebar="500" />
         - Node: (Seharusnya sudah terpilih).
         - CT ID: ID unik untuk CT Anda (misalnya, 100, 101, dll.).
         - Hostname: Nama host untuk CT Anda.
         - Password: Kata sandi untuk akun root di dalam CT.
         - Template: Pilih template OS yang ingin Anda gunakan untuk CT Anda. Template adalah image dasar dari sistem operasi yang akan diinstal di dalam CT. Anda dapat memilih dari daftar template yang tersedia atau mengunggah template Anda sendiri.
-        ![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/template.png?raw=true)
+        <img src="mergatur-tamplate.png" lebar="500" />
         - Storage: Pilih storage pool atau lokasi tempat CT Anda akan disimpan.
-        ![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/storage.png?raw=true)
+        <img src="mengatur-penyimpanan.png" lebar="500" />      
         - Network: Konfigurasi jaringan untuk CT Anda. Anda dapat memilih untuk menggunakan DHCP atau mengkonfigurasi alamat IP statis.
-        ![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/network.png?raw=true)
+       <img src="memberikan-ip-url.png" lebar="500" />
         - CPU: Alokasikan core CPU untuk CT Anda.
+          <img src="mengatur-cpu.png" lebar="500" />
         - Memory: Alokasikan RAM untuk CT Anda.
+          <img src="mengatur-ram.png" lebar="500" />
     
 
 4.Konfirmasi dan Buat: Setelah Anda selesai mengkonfigurasi semua opsi, tinjau ringkasan konfigurasi Anda. Jika semuanya sudah benar, klik tombol "Create" atau "Finish" untuk membuat CT.
-![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/confirm.png?raw=true)
+<img src="confirm.png" lebar="500" />
 5.Mulai CT: Setelah CT dibuat, Anda dapat menemukannya di daftar VM/CT di bawah node Anda. Pilih CT yang baru dibuat, dan klik tombol "Start" untuk memulai CT.
-![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/start.png?raw=true)
-6.Konsol CT: Setelah CT berjalan, Anda dapat mengakses konsol CT dengan memilih CT dan mengklik tombol "Console". Ini akan membuka jendela konsol di mana Anda dapat berinteraksi dengan CT Anda.
+<img src="menyalakan.png" lebar="500" />
+6.Anda dapat melihat hasil riwayat dengan menggeser / mengklik 2x pada layar bagian bawa anda dan akan muncul menu riwayat.
+<img src="riwayat-pembuatan.png" lebar="500" />
+7.Konsol CT: Setelah CT berjalan, Anda dapat mengakses konsol CT dengan memilih CT dan mengklik tombol "Console". Ini akan membuka jendela konsol di mana Anda dapat berinteraksi dengan CT Anda.
 ---
 ## Langkah Kedua (Mengakses dan menggunakan CT yang Baru Dibuat)
 1.Mulai Container:
-![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/start.png?raw=true)
-- Pilih CT yang baru saja Anda buat dari daftar di panel kiri. Pada gambar, terlihat CT dengan ID 124 (naufalardzi) sudah terpilih.
+<img src="menyalakan.png" lebar="500" />
+- Pilih CT yang baru saja Anda buat dari daftar di panel kiri. Pada gambar, terlihat CT dengan ID 124 (alok) sudah terpilih.
 - Klik tombol "Start" yang terletak di bagian atas antarmuka. Ini akan memulai proses booting CT. Anda dapat melihat status "OK" pada log tugas di bagian bawah, yang menandakan CT berhasil dimulai.
 
 2.Buka Konsol: 
-![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/interaksi-konsol.png?raw=true)
+<img src="login-dengan-sandi.png" lebar="500" />
 - Setelah CT berjalan, klik tombol "Console" yang terletak di sebelah tombol "Start" dan "Shutdown". Ini akan membuka jendela konsol, memungkinkan Anda untuk berinteraksi langsung dengan sistem operasi di dalam CT.
 
 3.Login ke Sistem:
-![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/login.jpg?raw=true)
-- Di jendela konsol, Anda akan melihat prompt login. Pada gambar, terlihat tulisan "naufalardzi login:".
+<img src="login-dengan-sandi.png" lebar="500" />
+- Di jendela konsol, Anda akan melihat prompt login. Pada gambar, terlihat tulisan "alok login:".
 - Masukkan username dan password yang Anda konfigurasi saat membuat CT. Biasanya, Anda akan login sebagai user root dengan password yang sudah Anda tentukan sebelumnya.
 
 4.Mulai Menggunakan CT:
@@ -69,13 +73,13 @@ Sekarang, mari kita mulai dengan langkah pertama!
 ---
 
 ## Langkah Ketiga (Konfigurasi dan Verifikasi Jaringan CT)
-![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/gambar-3.png?raw=true)
+<img src="mengatur-netword.png" lebar="500" />
 
 1.Periksa Konfigurasi: Pastikan IP statis, gateway, dan DNS di file 01-network-manager-all.yaml sudah benar.
 2.Simpan: Ctrl+O, Enter, lalu Ctrl+X untuk menyimpan dan keluar dari nano.
 3.Restart Jaringan: sudo systemctl restart networking atau sudo reboot.
 4.Uji Koneksi: ping 192.168.50.1 (gateway) lalu ping. Pastikan semua perintah dijalankan di dalam konsol CT.
-![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/ping.png?raw=true)
+<img src="melakukan-ping.png" lebar="500" />
 ---
 
 ## Langkah Keempat(Mengelola Website di CT Anda)
