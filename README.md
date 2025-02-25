@@ -32,7 +32,7 @@ Sekarang, mari kita mulai dengan langkah pertama!
         - Hostname: Nama host untuk CT Anda.
         - Password: Kata sandi untuk akun root di dalam CT.
         - Template: Pilih template OS yang ingin Anda gunakan untuk CT Anda. Template adalah image dasar dari sistem operasi yang akan diinstal di dalam CT. Anda dapat memilih dari daftar template yang tersedia atau mengunggah template Anda sendiri.
-        <img src="mergatur-tamplate.png" lebar="500" />
+        <img src="merngatur-tamplate.png" lebar="500" />
         - Storage: Pilih storage pool atau lokasi tempat CT Anda akan disimpan.
         <img src="mengatur-penyimpanan.png" lebar="500" />      
         - Network: Konfigurasi jaringan untuk CT Anda. Anda dapat memilih untuk menggunakan DHCP atau mengkonfigurasi alamat IP statis.
