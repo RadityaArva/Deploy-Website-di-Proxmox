@@ -107,7 +107,9 @@ Jika Apache tidak berjalan, coba jalankan 'sudo systemctl start apache2'.
     - Restart Apache: sudo systemctl restart apache2.
 
 4.Memverifikasi Website: 
+
 <img src="pengecekan-link-ip.png" lebar="500" />
+
 - Buka browser web dan kunjungi alamat IP CT Anda (misalnya, http://192.168.50.110).
 - Jika Anda telah mengkonfigurasi domain, kunjungi domain tersebut (misalnya, http://contohdomain.com).
 - Anda seharusnya melihat website Anda.
