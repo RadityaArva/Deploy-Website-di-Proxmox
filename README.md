@@ -71,7 +71,7 @@ Sekarang, mari kita mulai dengan langkah pertama!
 ---
 
 ## Langkah Ketiga (Konfigurasi dan Verifikasi Jaringan CT)
-<img src="mengatur-netword.png" lebar="500" />
+<img src="mengatur-network.png" lebar="500" />
 
 1.Periksa Konfigurasi: Pastikan IP statis, gateway, dan DNS di file 01-network-manager-all.yaml sudah benar.
 2.Simpan: Ctrl+O, Enter, lalu Ctrl+X untuk menyimpan dan keluar dari nano.
