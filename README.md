@@ -1,6 +1,4 @@
 # Deploy-Website-di-Proxmox
-
-# Tutorial Deploy di Proxmox
 ---
 ###### Halo! Selamat datang di panduan deployment Proxmox VE. Platform virtualisasi open-source yang handal dan gratis ini ideal untuk mengelola VM dan kontainer. Kami akan memandu Anda melalui instalasi, konfigurasi dasar, serta pembuatan dan pengelolaan VM.
 
@@ -22,7 +20,7 @@ Sekarang, mari kita mulai dengan langkah pertama!
 
 ## Langkah Pertama (Membuat Container)
 
-![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/gambar-1.png?raw=true)
+<img src="Membuat_container.png" lebar="500" />
 
 1.Pilih Node: Pada panel sebelah kiri, di bawah "Datacenter", pilih node Proxmox tempat Anda ingin membuat CT. Node ini biasanya memiliki nama seperti "pg-proxmoxlab" seperti pada gambar.
 2.Klik "Create CT": Setelah memilih node, cari dan klik tombol "Create CT". Tombol ini biasanya terletak di bagian atas antarmuka, di sebelah tombol "Create VM".
