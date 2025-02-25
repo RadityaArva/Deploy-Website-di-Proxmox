@@ -78,17 +78,18 @@ Sekarang, mari kita mulai dengan langkah pertama!
 3.Restart Jaringan: sudo systemctl restart networking atau sudo reboot.
 4.Uji Koneksi: ping 192.168.50.1 (gateway) lalu ping. Pastikan semua perintah dijalankan di dalam konsol CT.
 <img src="melakukan-ping.png" lebar="500" />
+
 ---
 
 ## Langkah Keempat(Mengelola Website di CT Anda)
-![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/gambar-4.png?raw=true)
+<img src="mengatur-arah-tujuh.png" lebar="500" />
 
 1.Memastikan Apache Berjalan: Anda sebelumnya menjalankan systemctl restart apache2. Ini adalah langkah penting. Pastikan Apache berjalan dengan baik. Anda bisa memeriksanya dengan: 
 - systemctl status apache2
 Jika Apache tidak berjalan, coba jalankan 'sudo systemctl start apache2'.
 
 2.Memahami Struktur Direktori Website:
-![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/direktori.png?raw=true)
+<img src="mengatur-arah-tujuh.png" lebar="500" />
 - /var/www/html/: Ini adalah direktori default untuk menyimpan file website Anda.
 - /var/www/html/portoezi/: Ini adalah subdirektori yang berisi file website Anda. Gambar menunjukkan file seperti assets, index.html, mediaqueries.css, script.js, dan style.css.
 - /etc/apache2/sites-available/: Ini adalah direktori tempat file konfigurasi virtual host Apache disimpan. File-file ini menentukan bagaimana Apache menghost website yang berbeda.
@@ -106,8 +107,8 @@ Jika Apache tidak berjalan, coba jalankan 'sudo systemctl start apache2'.
     - Restart Apache: sudo systemctl restart apache2.
 
 4.Memverifikasi Website: 
-![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/ubuntu.jpeg?raw=true)
+<img src="pengecekan-link-ip.png" lebar="500" />
 - Buka browser web dan kunjungi alamat IP CT Anda (misalnya, http://192.168.50.110).
 - Jika Anda telah mengkonfigurasi domain, kunjungi domain tersebut (misalnya, http://contohdomain.com).
 - Anda seharusnya melihat website Anda.
-![alt text](https://github.com/arzisukajs/Tutorial-Deploy-Proxmox/blob/main/hasil.jpeg?raw=true)
+<img src="hasil.png" lebar="500" />
